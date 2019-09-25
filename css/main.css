@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background: linear-gradient(rgb(0.5, 0.5, 0.5,0.7),rgba(0.5,0.5,0.5,0.4)), url(/images/header-background.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;  
+    
+}
+
+.logo {
+    color: white;
+    font-family: 'Yesteryear', cursive;
+    font-size: 30px;
+}
+
+.nav-menu {
+    list-style: none;
+    
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav-menu li a:hover {
+    color: #F2AC32;
+    transition: color 0.3s ease-in-out;
+}
+
+.search {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.my-bag {
+    font-size: 30px;
+}
+
+.header-title-1 {
+    color: #F2AC32;
+    font-size: 44px;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 170px;
+    margin-bottom: 15px;
+}
+
+.header-title-2 {
+    color: white;
+    font-size: 55px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+
+}
+
+.header-cta-button {
+    color: white;
+    background-color: #F2AC32;
+    padding: 10px 20px;
+    text-decoration: none; 
+    transition: all 0.3s ease-in-out;  
+
+}
+
+.header-cta-button:hover {
+    background-color: rgb(192, 128, 18);
+
+}
+
+/* *********************************** Discover Section ******************************** */
+
+.discover-section {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    padding: 67px 100px;
+}
+
+.discover-h1 {
+    color: #F2AC32;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.discover-h2 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.food-item {
+    height: 400px;
+    width: 240px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    
+    
+}
+
+.food-border {
+    background-color: rgb(218, 216, 216);
+    border: 2px solid #F2AC32;
+    position: relative;
+    margin-top: 35px;
+}
+
+.food-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    right: 15px;
+    top: 15px;
+    padding: 100px 20px;
+    -webkit-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+}
+
+.food-item p {
+    color: rgb(172, 170, 170);
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 30px;
+}
+.food-item a {
+    color: #F2AC32;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.food-1 {
+    background-image: url(/images/burger.jpg);
+    background-size: cover;
+    -webkit-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    
+}
+
+.food-2 {
+    background-image: url(/images/noodles.jpg);
+    background-size: cover;
+    margin-top: 35px;
+    -webkit-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
+}
+
+/* *********************************** Specialities Section ******************************** */
+
+.specialities-section {
+    height: 650px;
+    background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.9), rgba(0.5, 0.5, 0.5, 0.9)), url(/images/service-background.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    margin-bottom: -20px;
+}
+
+.specialities-section-middle {
+    text-align: center;
+    height: 450px;
+    
+}
+
+.specialities-section-middle:before {
+    content: '';
+    border-top: 60px solid #F0F0F0;
+    border-right: 99vw solid transparent;
+    top: -100px;
+    left: 0;
+    
+}
+
+ .specialities-section-middle:after {
+    content: '';
+    height: 90px;
+    border-bottom: 190px solid #F0F0F0;
+    border-left: 200vw solid transparent;
+    bottom: -100px;
+    right: 0;
+}
+
+
+
+.specialities-h1 {
+    color: #F2AC32;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;
+}
+
+.specialities-h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 70px;
+}
+
+.specialities-section-row {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+
+}
+
+.specialities-section-col {
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.specialities-h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    
+}
+
+.specialities-image1,
+.specialities-image2,
+.specialities-image3 {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.specialities-overlay {
+    opacity: 0;
+    position: absolute;
+    background-color:  rgba(242, 172, 50,0.7);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+.specialities-image1:hover .specialities-overlay,
+.specialities-image2:hover .specialities-overlay,
+.specialities-image3:hover .specialities-overlay {
+
+    opacity: 1;
+}                                                                                                                                                               
+
+.specialities-overlay-border {
+    border: 2px solid white;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 80px 30px;
+}
+.specialities-image1 {
+    background-image: url(/images/breakfast.jpg);
+    background-size: cover;
+}
+
+.specialities-image2 {
+    background-image: url(/images/lunch.jpg);
+    background-size: cover;
+}
+
+.specialities-image3 {
+    background-image: url(/images/dinner.jpg);
+    background-size: cover;
+}
+
+/* special Menu Section */
+.special-menu-section {
+    background-color: #F0F0F0;
+    height: 950px;
+    text-align: center;
+    
+}
+    
+.today-menu-h1 {
+    color: #F2AC32;
+    font-size: 40px;
+    font-family:  'Great Vibes', cursive;
+    padding-top: 30px;
+}
+
+.special-menu-h1 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.special-menu-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.special-menu-col {
+    width: 350px;
+    height: 350px;
+    border: none;
+    background-color: rgb(248, 246, 244);
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.dessert-icon {
+    margin-bottom: 5px;
+}
+.dessert {
+    background-color: #F2AC32;
+    width: 50%;
+    color: #F0F0F0;
+    padding: 50px 10px;
+}
+
+.line {
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin: 10px auto;
+    background-color: #F0F0F0;
+}
+
+.dessert-h1 {
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 3px;
+}
+
+.ice-creame-h1 {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.dessert > p {
+    color: #F0F0F0; 
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif; 
+    padding: 10px 10px;
+
+}
+
+.price-h6 {
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 1px;
+    margin-top: 16px;
+}
+.dessert-img {
+    background-image: url(/images/dessert.jpg);
+    background-size: cover;
+    width: 50%;
+}
+
+.triangle-right {
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #F2AC32;
+    margin-top: 17px;
+}
+
+.triangle-right-white {
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #F0F0F0;
+    margin-top: 17px;
+}
+
+.triangle-left {
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #F0F0F0 transparent transparent;
+    margin-top: 17px;
+    margin-left: 160px;
+}
+
+.menu-col2, .menu-col3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-col {
+    width: 50%;
+    height: 50%;
+}
+
+.col2 {
+    background-image: url(/images/grilled\ chicken.jpg);
+    background-size: cover;
+}
+
+.col3 {
+    background-image: url(/images/sushi-fish.jpg);
+    background-size: cover;
+}
+
+.doner-kebap {
+    background-color: #F2AC32;
+    width: 50%;
+}
+
+.doner-kebap-img {
+    background-image: url(/images/doner-kebap.jpg);
+    background-size: cover;
+    width: 50%;
+}
+
