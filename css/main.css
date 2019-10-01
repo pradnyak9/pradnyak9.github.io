@@ -347,7 +347,7 @@ nav {
 .dessert-icon {
     margin-bottom: 5px;
 }
-.dessert {
+.dessert, .doner-kebap {
     background-color: #F2AC32;
     width: 50%;
     color: #F0F0F0;
@@ -375,18 +375,19 @@ nav {
     margin-bottom: 10px;
 }
 
-.dessert > p {
+.dessert > p, .doner-kebap > p {
     color: #F0F0F0; 
     font-size: 13px;
     font-family: 'Source Sans Pro', sans-serif; 
     padding: 10px 10px;
+    margin-bottom: 16px;
 
 }
 
 .price-h6 {
     font-family: 'Oswald', sans-serif; 
     letter-spacing: 1px;
-    margin-top: 16px;
+   
 }
 .dessert-img {
     background-image: url(/images/dessert.jpg);
@@ -411,7 +412,7 @@ nav {
     border-style: solid;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #F0F0F0;
-    margin-top: 17px;
+    margin-left: -20px;
 }
 
 .triangle-left {
@@ -421,26 +422,69 @@ nav {
     border-style: solid;
     border-width: 10px 15px 10px 0;
     border-color: transparent #F0F0F0 transparent transparent;
-    margin-top: 17px;
-    margin-left: 160px;
+    margin-left: 140px;
 }
 
-.menu-col2, .menu-col3 {
+.special-menu-flex-container {
     display: flex;
     flex-wrap: wrap;
+   
 }
 
-.grid-col {
+.flex-item-1,
+.flex-item-2,
+.flex-item-3,
+.flex-item-4 {
     width: 50%;
     height: 50%;
+    padding: 20px;
 }
 
-.col2 {
+.yellow-line {
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin: 10px auto;
+    background-color: #F2AC32;
+
+}
+ .dinner-h1, .lunch-h1 {
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 3px;
+    color: #F2AC32;
+ }
+
+ .lunch-icon, .dinner-icon {
+     color: #F2AC32;
+     margin-bottom: 10px;
+ }
+
+ .lunch-icon-white {
+    color: #F0F0F0;
+    margin-bottom: 10px;
+ }
+
+ .grilled-h1, .sushi-h1 {
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 2px;
+ }
+
+ .yellow-price-h6 {
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 1px;
+    color: #F2AC32;
+    margin-top: 5px;
+   
+}
+
+.flex-item-2 {
     background-image: url(/images/grilled\ chicken.jpg);
     background-size: cover;
 }
 
-.col3 {
+.flex-item-3 {
     background-image: url(/images/sushi-fish.jpg);
     background-size: cover;
 }
@@ -456,3 +500,145 @@ nav {
     width: 50%;
 }
 
+/* Reservation Section */
+
+.reservation-section {
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.7), rgba(0.5, 0.5, 0.5, 0.7)), url(/images/booking-table.jpg);
+    background-size: cover;
+}
+
+.reservation-h1 {
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive ;
+    letter-spacing: 2px;
+    color: #F2AC32;
+}
+
+.booking-table-h1 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 5px;
+    color: #F0F0F0;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.reservation-div {
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    align-content: center;
+
+}
+
+.booking-icon {
+    background-color: #F0F0F0;
+    margin-right: 2px;
+    padding: 10px;
+}
+
+.booking-data {
+    background-color: #F0F0F0;
+    padding: 10px;
+    padding-right: 60px;
+}
+
+.booking-cta {
+    background-color: #F2AC32;
+    color: #F0F0F0;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 7px 40px;
+    text-transform: uppercase;
+}
+
+/****************footer-section********************/
+
+.footer-section {
+    background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.7), rgba(0.5, 0.5, 0.5, 0.7)), url(/images/service-background.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.footer-div {
+    margin: 0px 60px 30px 60px;
+}
+
+.footer-title {
+    color: #F2AC32;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.footer-text {
+    color: #F0F0F0;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 12px; 
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.email {
+    padding: 10px 15px;
+    background-color: #F0F0F0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.subscribe-cta {
+    background-color: #F2AC32;
+    color: #F0F0F0;
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 2px;
+    font-size: 10px;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.copyright-div {
+    border-top: 1px solid grey;
+    
+    color: #F0F0F0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+}
+
+.copyright-text {
+    vertical-align: middle;
+    padding: 25px 50px;
+    
+}
+
+.copyright-name {
+    color: #F2AC32;
+}
