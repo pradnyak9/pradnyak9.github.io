@@ -4,61 +4,78 @@
     box-sizing: border-box;
     
 }
+body {
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+}
 
 header {
+    top: 0;
+    left: 0;
     background: linear-gradient(rgb(0.5, 0.5, 0.5,0.7),rgba(0.5,0.5,0.5,0.4)), url(/images/header-background.jpg);
     height: 600px;
     width: 100%;
     background-size: cover;
     color: white;
     text-align: center;
+    padding: 20px;
 
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 40px;  
-    
-}
-
-.logo {
+header .logo {
+    float: left;
     color: white;
     font-family: 'Yesteryear', cursive;
     font-size: 30px;
+    
 }
 
-.nav-menu {
+header nav {
+    
+    float: right;
+    
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+header nav ul li {
     list-style: none;
     
 }
 
-.nav-menu li {
-    display: inline-block;
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
     font-size: 16px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
 
-.nav-menu li a {
-    text-decoration: none;
-    color: white;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.nav-menu li a:hover {
+header nav ul li a:hover,
+header nav ul li a.active {
     color: #F2AC32;
     transition: color 0.3s ease-in-out;
 }
 
-.search {
-    margin-right: 20px;
-    margin-left: 10px;
-}
+.menu-toggle {
+    float: right;
+    color: #fff;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
 
-.my-bag {
-    font-size: 30px;
 }
 
 .header-title-1 {
@@ -96,10 +113,12 @@ nav {
 /* *********************************** Discover Section ******************************** */
 
 .discover-section {
+    height: 615px;
     background-color: #F0F0F0;
     display: flex;
     justify-content: center;
-    padding: 67px 100px;
+    flex-wrap: wrap;
+    padding: 67px 50px;
 }
 
 .discover-h1 {
@@ -135,13 +154,14 @@ nav {
 }
 
 .food-overlay {
+    overflow-wrap: break-word;
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: white;
     right: 15px;
     top: 15px;
-    padding: 100px 20px;
+    padding: 60px 20px;
     -webkit-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 2px 21px 0px rgba(0,0,0,0.75);
@@ -186,35 +206,18 @@ nav {
     height: 650px;
     background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.9), rgba(0.5, 0.5, 0.5, 0.9)), url(/images/service-background.jpg);
     background-size: cover;
-    padding-top: 60px;
+    padding-top: 80px;
     margin-bottom: -20px;
+    transform: skewY(-6deg);
 }
 
 .specialities-section-middle {
     text-align: center;
-    height: 450px;
+    height: 600px;
+    transform: skewY(6deg);
+    
     
 }
-
-.specialities-section-middle:before {
-    content: '';
-    border-top: 60px solid #F0F0F0;
-    border-right: 99vw solid transparent;
-    top: -100px;
-    left: 0;
-    
-}
-
- .specialities-section-middle:after {
-    content: '';
-    height: 90px;
-    border-bottom: 190px solid #F0F0F0;
-    border-left: 200vw solid transparent;
-    bottom: -100px;
-    right: 0;
-}
-
-
 
 .specialities-h1 {
     color: #F2AC32;
@@ -234,7 +237,8 @@ nav {
 .specialities-section-row {
     display: flex;
     justify-content: center;
-    height: 200px;
+    flex-wrap: wrap;
+    height: 248px;
 
 }
 
@@ -332,6 +336,7 @@ nav {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+
 }
 
 .special-menu-col {
@@ -415,7 +420,7 @@ nav {
     margin-left: -20px;
 }
 
-.triangle-left {
+/* .triangle-left {
     display: block;
     width: 0;
     height: 0;
@@ -423,7 +428,7 @@ nav {
     border-width: 10px 15px 10px 0;
     border-color: transparent #F0F0F0 transparent transparent;
     margin-left: 140px;
-}
+} */
 
 .special-menu-flex-container {
     display: flex;
@@ -437,7 +442,7 @@ nav {
 .flex-item-4 {
     width: 50%;
     height: 50%;
-    padding: 20px;
+    padding: 5px;
 }
 
 .yellow-line {
@@ -505,7 +510,7 @@ nav {
 .reservation-section {
     height: 300px;
     text-align: center;
-    padding: 50px;
+    padding: 50px 0px;
     background-image: linear-gradient(rgba(0.5, 0.5, 0.5, 0.7), rgba(0.5, 0.5, 0.5, 0.7)), url(/images/booking-table.jpg);
     background-size: cover;
 }
@@ -534,10 +539,10 @@ nav {
 }
 
 .reservation-div {
-    
+    width: 20%;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px;
+    padding-bottom: 10px;
     align-content: center;
 
 }
@@ -546,12 +551,13 @@ nav {
     background-color: #F0F0F0;
     margin-right: 2px;
     padding: 10px;
+    width: 20%
 }
 
 .booking-data {
     background-color: #F0F0F0;
-    padding: 10px;
-    padding-right: 60px;
+    padding: 10px 35px;
+    width: 80%;
 }
 
 .booking-cta {
@@ -580,7 +586,6 @@ nav {
 .footer-div {
     margin: 0px 60px 30px 60px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -645,4 +650,158 @@ nav {
 
 .copyright-name {
     color: #F2AC32;
+}
+
+/*************** media queries *******************/
+
+/* tablet */
+@media screen and (max-width: 1036px) {
+    
+
+    .food-item {
+        width: 30%;
+    }
+
+.footer-section {
+    height: 650px;
+}
+
+.footer-div { 
+    width: 30%;
+    text-align: center;
+}
+
+.reservation-section {
+    height: 350px;
+}
+.reservation-div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 856px) {
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    header nav {
+        /* display: none; */
+        position: absolute;
+        /* display: block; */
+        width: 100%;
+        height: 100v;
+        background-color: rgba(0,0,0,0.75);
+        top: 90px;
+        left: -100%;
+        transition: 0.5s;
+         
+    }
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul a {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    /* .triangle-left {
+        margin-left: 159px;
+    } */
+
+    .specialities-section {
+        height: 810px;
+        padding: 70px;
+    }
+    .specialities-section-middle {
+        height: 600px;
+    }
+
+    .specialities-section-col {
+        width: 40%;
+    }
+    .discover-section {
+        height: 1000px;
+        padding: 40px 20px;
+    }
+
+    .food-item {
+        width: 39%;
+        margin: 30px;
+    }
+    .special-menu-section {
+        padding: 30px;
+    }
+
+    .special-menu-section {
+        width: 100%;
+    }
+
+    .special-menu-col {
+        width: 100%
+    }
+    
+}
+
+@media screen and (max-width: 602px){
+
+    .discover-section {
+        height: 1442px;
+    }
+    .reservation-div {
+        width: 46%;
+    }
+
+    .special-menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        
+    }
+
+    .specialities-section {
+        padding: 70px 0 0 0 ;
+    }
+    
+    .special-menu-section {
+        height: 1660px;
+    }
+    .footer-div {
+        margin: 0px 30px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 456px){
+
+    .food-item {
+        width: 60%;
+    }
+    .specialities-section-col {
+        width: 70%;
+    }
+
+    .specialities-section {
+        height: 1097px;
+    }
+
+    .special-menu-col {
+        width: 100%;
+    }
+
+    .special-menu-section {
+        height: 1670px;
+    }
+
+    .reservation-div {
+        width: 70%;
+    }
 }

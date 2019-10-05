@@ -15,35 +15,41 @@
     <title>5-Star Restaurant</title>
 </head>
 <body>
-    <!-- hello -->
+  
     <!-- ============================ Header Section ============================================== -->
     <header>
-        <nav>
-            <h2 class="logo">Foody...</h2>
-            <ul class="nav-menu">
+        <div class="logo">
+            <h2>Foody...</h2>
+        </div>
+        <nav class="active">     
+            <ul>
                 <li><a href="#">Welcome</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Restaurant</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Find Us</a></li>
-                <li><i class="fas fa-search search"></i></li>
-                <li><i class="fas fa-shopping-bag my-bag"></i></li>
-            </ul>            
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>   
+            
         </nav>
+        <div class="menu-toggle" role="contentinfo">
+            <i class="fas fa-bars"></i>
+        </div>
         <h2 class="header-title-1">Welcome</h2>
         <h1 class="header-title-2">5 Stars Restaurant</h1>
         <a href="#" class="header-cta-button">Book Table</a>
     </header>  
-    <!-- ============================================== Header Section End ============================================== -->
+    <!-- ================= Header Section End ====================== -->
     
-    <!-- ============================================== Discover Section Start============================================== -->
+    <!-- ================= Discover Section Start ==================== -->
     <div class="discover-section" role="article">
       
         <div class="food-item food-border" role="contentinfo">
            <div class="food-overlay" role="contentinfo">
                 <h1 class="discover-h1">Discover</h1>
                 <h3 class="discover-h2">Our Story</h3>
-                <p> Opened by Rick Stein and Jill Stein in 1975, The Seafood Restaurant is famous for establishing an international reputation.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem, nesciunt necessita.</p>
                 <a href="#" class="about-us">about us</a>
             </div>
         </div>
@@ -51,9 +57,9 @@
         <div class="food-item food-2" role="contentinfo"></div>
 
     </div>
-    <!-- ============================================== Discover Section End ============================================== -->
+    <!-- =========================== Discover Section End ============================== -->
 
-    <!-- ============================================== Specialities Section Start ============================================== -->
+    <!-- =========================== Specialities Section Start ============================ -->
 
     <div class="specialities-section" role="contentinfo">
         <div class="specialities-section-middle" role="contentinfo">
@@ -93,9 +99,9 @@
             </div>
         </div>
     </div>
-    <!-- ============================================== Specialities Section End ============================================== -->
+    <!-- =================== Specialities Section End ======================== -->
 
-    <!-- ============================================== Specialities Section End ============================================== -->
+    <!-- ==================== Special menu start ======================= -->
 -
     <div class="special-menu-section" role="contentinfo">
         <h1 class="today-menu-h1">To Day</h1>
@@ -212,9 +218,9 @@
                         2 people
                     </span>
             </div>
-
-            <a href="#" class="booking-data booking-cta">Find A Table</a>
-            
+            <div class="reservation-div " role="contentinfo">
+                <a href="#" class="booking-cta">Find A Table</a>
+            </div>
         </div>
     </div>
 
@@ -242,15 +248,24 @@
         </div>
         <div class="footer-div" role="doc-footnote">
             <h3 class="footer-title">Newsletter</h3>
-            <div class="newsletter">
-                <input class="email" type="email" name="email" id="email" placeholder="Enter your Email...">
+            <div class="newsletter" role="none">
+                <input class="email" type="email" name="email" id="email" placeholder="Enter your Email..." aria-label="email">
                 <a href="#" class="subscribe-cta">Subscribe</a>
             </div>
         </div>
         <div class="copyright-div" role="doc-footnote">
-            <p class="copyright-text"> Copyright &copy; 2016 <span class="copyright-name"> ZooTemplate </span>. All rights reserved. </p>
+            <p class="copyright-text"> Copyright &copy; 2016 <span class="copyright-name" role="doc-footnote"> ZooTemplate </span>. All rights reserved. </p>
         </div>
     </footer>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+</script>
 </html>
